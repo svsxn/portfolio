@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,7 +11,7 @@ export default function Home() {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4 text-xs tracking-widest">
               <div className="flex items-center gap-3 text-green-400">
-                <div className="size-1.5 rounded-full bg-current" />
+                <div className="size-1.5 rounded-full bg-current ml-1" />
                 <p>FULL-STACK DEVELOPER</p>
               </div>
               <Separator orientation="vertical" />
@@ -27,6 +29,14 @@ export default function Home() {
               <br />
               and simple, mainstainable arichitecture.
             </p>
+            <div className="flex gap-6 mt-2">
+              <Button variant="secondary" className="px-7 py-6 rounded-sm">
+                View Projects <ArrowRightIcon className="ml-3" />
+              </Button>
+              <Button variant="outline" className="px-7 py-6 rounded-sm">
+                Get In Touch
+              </Button>
+            </div>
           </div>
           <div className="flex justify-end">
             <Image
