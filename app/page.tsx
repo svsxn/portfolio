@@ -9,12 +9,12 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4 text-xs tracking-widest">
-              <div className="flex items-center text-green-400">
-                <DotIcon />
+              <div className="flex items-center gap-2 text-green-400">
+                <DotIcon className="w-3 h-3 scale-[2.5]" />
                 <p>FULL-STACK DEVELOPER</p>
               </div>
               <Separator orientation="vertical" />
-              <p>NEXT.JS & SUPABASE</p>
+              <p className="text-muted-foreground">NEXT.JS & SUPABASE</p>
             </div>
             <h1 className="text-6xl sm:text-[5.1rem] mb-4 font-semibold tracking-tight leading-20">
               Sebastian Magnucki
