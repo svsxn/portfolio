@@ -1,5 +1,4 @@
 import { Separator } from "@/components/ui/separator";
-import { DotIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,8 +8,8 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4 text-xs tracking-widest">
-              <div className="flex items-center gap-2 text-green-400">
-                <DotIcon className="w-3 h-3 scale-[2.5]" />
+              <div className="flex items-center gap-3 text-green-400">
+                <div className="size-1.5 rounded-full bg-current" />
                 <p>FULL-STACK DEVELOPER</p>
               </div>
               <Separator orientation="vertical" />
