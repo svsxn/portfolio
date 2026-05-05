@@ -17,7 +17,7 @@ export function TechStack() {
   return (
     <div className="text-xs tracking-widest">
       <p className="mb-2">TECH STACK</p>
-      <ul className="flex items-center gap-8">
+      <ul className="flex items-center gap-10">
         {TECH_STACK.map((tech) => (
           <li
             key={tech.name}
