@@ -1,3 +1,4 @@
+import { TechStack } from "@/components/hero/tech-stack/tech-stack";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ArrowRightIcon } from "lucide-react";
@@ -29,7 +30,7 @@ export default function Home() {
               <br />
               and simple, mainstainable arichitecture.
             </p>
-            <div className="flex gap-6 mt-2">
+            <div className="flex gap-6 mt-2 mb-8">
               <Button variant="secondary" className="px-7 py-6 rounded-sm">
                 View Projects <ArrowRightIcon className="ml-3" />
               </Button>
@@ -37,15 +38,16 @@ export default function Home() {
                 Get In Touch
               </Button>
             </div>
+            <TechStack />
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end min-w-100">
             <Image
               width={400}
               height={400}
               alt="Profile picture"
               src="/profile-picture.png"
               loading="eager"
-              className="rounded-full"
+              className="rounded-full size-100"
             />
           </div>
         </div>
