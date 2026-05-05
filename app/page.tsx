@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="mt-48 max-w-6xl w-full mx-auto px-6 min-h-[80vh]">
+    <div className="mt-24 w-full mx-auto min-h-[80vh]">
       <section id="hero">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="flex flex-col gap-4">

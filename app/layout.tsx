@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
-import { ModeToggle } from "@/components/theme/mode-toggle";
+import { Header } from "@/components/header";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -25,12 +25,10 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col px-96">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
           <main className="flex flex-1">{children}</main>
-          <div className="fixed bottom-4 right-4">
-            <ModeToggle />
-          </div>
         </ThemeProvider>
       </body>
     </html>
