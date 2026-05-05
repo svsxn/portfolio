@@ -10,18 +10,18 @@ export default function Home() {
       <section id="hero">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-4 text-xs tracking-widest">
-              <div className="flex items-center gap-3 text-green-400">
+            <div className="flex items-center gap-4 text-xs font-semibold tracking-widest">
+              <div className="flex items-center gap-3 text-accent">
                 <div className="size-1.5 rounded-full bg-current ml-1" />
                 <p>FULL-STACK DEVELOPER</p>
               </div>
               <Separator orientation="vertical" />
               <p className="text-muted-foreground">NEXT.JS & SUPABASE</p>
             </div>
-            <h1 className="text-6xl sm:text-[5.1rem] mb-4 font-semibold tracking-tight leading-20">
+            <h1 className="text-6xl sm:text-[5.2rem] mb-4 font-semibold tracking-tight leading-20">
               Sebastian Magnucki
             </h1>
-            <p className="text-base text-muted-foreground leading-relaxed tracking-wide">
+            <p className="text-[18px] text-muted-foreground leading-relaxed tracking-wide">
               I build web applications end-to-end, from clean
               <br />
               interfaces to scalable backend systems.
@@ -31,7 +31,10 @@ export default function Home() {
               and simple, mainstainable arichitecture.
             </p>
             <div className="flex gap-6 mt-2 mb-8">
-              <Button variant="secondary" className="px-7 py-6 rounded-sm">
+              <Button
+                variant="secondary"
+                className="px-7 py-6 rounded-sm bg-accent hover:bg-accent/80"
+              >
                 View Projects <ArrowRightIcon className="ml-3" />
               </Button>
               <Button variant="outline" className="px-7 py-6 rounded-sm">
