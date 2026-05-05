@@ -22,13 +22,12 @@ export default function Home() {
               Sebastian Magnucki
             </h1>
             <p className="text-[18px] text-muted-foreground leading-relaxed tracking-wide">
-              I build web applications end-to-end, from clean
+              I build fast web apps with Next.js and Supabase.
               <br />
-              interfaces to scalable backend systems.
+              5 years of experience making things work without
               <br />
-              I focus on performance, real-time features,
-              <br />
-              and simple, mainstainable arichitecture.
+              making them complicated. From scratch to launch,
+              <br />I keep the code clean and the features fast.
             </p>
             <div className="flex gap-6 mt-2 mb-8">
               <Button
