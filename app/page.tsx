@@ -40,14 +40,14 @@ export default function Home() {
             </div>
             <TechStack />
           </div>
-          <div className="flex justify-end min-w-100">
+          <div className="flex justify-end min-w-105">
             <Image
-              width={400}
-              height={400}
-              alt="Profile picture"
-              src="/profile-picture.png"
+              width={420}
+              height={420}
+              alt="Avatar"
+              src="/avatar.png"
               loading="eager"
-              className="rounded-full size-100"
+              className="rounded-full size-105 border-2 border-zinc-700"
             />
           </div>
         </div>
