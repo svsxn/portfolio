@@ -21,7 +21,7 @@ export function TechStack() {
         {TECH_STACK.map((tech) => (
           <li
             key={tech.name}
-            className="group flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-200 transition cursor-default"
+            className="group flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-200 transition cursor-default hover:-translate-y-0.5"
           >
             <Image
               src={tech.icon}
