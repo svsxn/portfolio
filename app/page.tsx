@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="mt-24 w-full mx-auto min-h-[80vh]">
+    <div className="mt-24 w-full mx-auto">
       <section id="hero">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="flex flex-col gap-4">
@@ -29,10 +29,10 @@ export default function Home() {
               making them complicated. From scratch to launch,
               <br />I keep the code clean and the features fast.
             </p>
-            <div className="flex gap-6 mt-2 mb-8">
+            <div className="flex gap-6 mt-2 mb-16">
               <Button
                 variant="secondary"
-                className="px-7 py-6 rounded-sm bg-accent hover:bg-accent/80"
+                className="px-7 py-6 rounded-sm bg-accent hover:bg-accent/80 hover:scale-105"
               >
                 View Projects <ArrowRightIcon className="ml-3" />
               </Button>
@@ -49,7 +49,7 @@ export default function Home() {
               alt="Avatar"
               src="/avatar.png"
               loading="eager"
-              className="rounded-full size-105 border-2 border-zinc-700"
+              className="rounded-full size-105 border-2 hover:shadow-[0_0_20px_var(--accent)] transition"
             />
           </div>
         </div>
