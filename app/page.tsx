@@ -49,7 +49,7 @@ export default function Home() {
               alt="Avatar"
               src="/avatar.png"
               loading="eager"
-              className="rounded-full size-105 border-2 hover:shadow-[0_0_20px_var(--accent)] transition"
+              className="rounded-full size-105 border border-white/10 shadow-[0_0_80px_rgba(255,255,255,0.03)]"
             />
           </div>
         </div>
