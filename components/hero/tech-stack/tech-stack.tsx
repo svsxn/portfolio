@@ -1,35 +1,25 @@
-import Image from "next/image";
-
-type TechItem = {
-  name: string;
-  icon: string;
-};
-
-const TECH_STACK: TechItem[] = [
-  { name: "Next.js", icon: "/icons/nextjs.svg" },
-  { name: "TypeScript", icon: "/icons/typescript.svg" },
-  { name: "Supabase", icon: "/icons/supabase.svg" },
-  { name: "Tailwind CSS", icon: "/icons/tailwindcss.svg" },
-  { name: "PostgreSQL", icon: "/icons/postgresql.svg" },
-];
+import { TECH_STACK } from "./tech-items";
 
 export function TechStack() {
   return (
     <div className="text-xs tracking-widest">
       <p className="mb-2">TECH STACK</p>
-      <ul className="flex items-center gap-10">
+      <ul className="flex items-center gap-8">
         {TECH_STACK.map((tech) => (
           <li
             key={tech.name}
-            className="group flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-200 transition cursor-default hover:-translate-y-0.5"
+            className="flex items-center gap-2 text-sm text-muted-foreground opacity-70 hover:opacity-100 hover:-translate-y-0.5 hover:text-white transition cursor-default"
           >
-            <Image
-              src={tech.icon}
-              alt={tech.name}
-              width={16}
-              height={16}
-              className="opacity-80 group-hover:opacity-100 transition"
-            />
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              // className="shrink-0"
+            >
+              {tech.iconPaths}
+            </svg>
             <span className="text-nowrap">{tech.name}</span>
           </li>
         ))}
