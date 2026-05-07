@@ -10,10 +10,18 @@ export function Header() {
       <div className="flex items-center gap-20">
         <nav>
           <ul className="flex gap-12">
-            <li>Projects</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Contact</li>
+            <li className="cursor-pointer hover:text-foreground/80 transition">
+              Projects
+            </li>
+            <li className="cursor-pointer hover:text-foreground/80 transition">
+              About
+            </li>
+            <li className="cursor-pointer hover:text-foreground/80 transition">
+              Skills
+            </li>
+            <li className="cursor-pointer hover:text-foreground/80 transition">
+              Contact
+            </li>
           </ul>
         </nav>
         <ModeToggle />
