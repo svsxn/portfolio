@@ -57,7 +57,7 @@ export function Header() {
             </Button>
             <Button variant="outline" size="icon" asChild>
               <Link
-                href="https://github.com/svsxn"
+                href="https://www.upwork.com/freelancers/~01be7180edb702ec01"
                 target="_blank"
                 rel="noreferrer"
               >
