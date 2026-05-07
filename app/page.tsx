@@ -1,7 +1,7 @@
 import { TechStack } from "@/components/hero/tech-stack/tech-stack";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowDownIcon, ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -51,6 +51,12 @@ export default function Home() {
               loading="eager"
               className="rounded-full size-105 border-2 hover:shadow-[0_0_20px_var(--accent)] transition"
             />
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 items-center text-zinc-500 text-sm tracking-widest mt-24">
+          <span>SCROLL DOWN</span>
+          <div className="border border-zinc-500 rounded-full p-2">
+            <ArrowDownIcon size={20} />
           </div>
         </div>
       </section>
