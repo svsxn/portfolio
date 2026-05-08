@@ -29,8 +29,8 @@ export const TECH_STACK: TechItem[] = [
             y2="14.2666"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_10_20"
@@ -40,8 +40,8 @@ export const TECH_STACK: TechItem[] = [
             y2="9.49999"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0" />
           </linearGradient>
         </defs>
       </>
@@ -73,7 +73,7 @@ export const TECH_STACK: TechItem[] = [
         <path
           d="M9.31475 15.734C8.90638 16.2486 8.07675 15.9667 8.06763 15.3094L7.92313 5.69612H14.3875C15.5581 5.69612 16.2109 7.04825 15.4829 7.96475L9.31475 15.734Z"
           fill="url(#paint1_linear_10_15)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <path
           d="M6.68551 0.265999C7.09389 -0.248626 7.92364 0.0332487 7.93264 0.690499L7.99614 10.3039H1.61276C0.44214 10.3039 -0.21061 8.95175 0.517265 8.03525L6.68551 0.265999Z"
@@ -88,8 +88,8 @@ export const TECH_STACK: TechItem[] = [
             y2="10.2377"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#249361" />
-            <stop offset="1" stop-color="#3ECF8E" />
+            <stop stopColor="#249361" />
+            <stop offset="1" stopColor="#3ECF8E" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_10_15"
@@ -100,7 +100,7 @@ export const TECH_STACK: TechItem[] = [
             gradientUnits="userSpaceOnUse"
           >
             <stop />
-            <stop offset="1" stop-opacity="0" />
+            <stop offset="1" stopOpacity="0" />
           </linearGradient>
         </defs>
       </>
