@@ -8,7 +8,7 @@ export function TechStack() {
         {TECH_STACK.map((tech) => (
           <li
             key={tech.name}
-            className="flex items-center gap-2 text-sm text-muted-foreground opacity-70 hover:opacity-100 hover:-translate-y-0.5 hover:text-white transition cursor-default"
+            className="flex items-center gap-2 text-sm text-muted-foreground/90 opacity-70 hover:opacity-100 hover:text-white transition cursor-default"
           >
             <svg
               width="20"
@@ -16,7 +16,7 @@ export function TechStack() {
               viewBox="0 0 16 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              // className="shrink-0"
+              className="shrink-0"
             >
               {tech.iconPaths}
             </svg>
