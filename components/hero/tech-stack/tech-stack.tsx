@@ -2,13 +2,13 @@ import { TECH_STACK } from "./tech-items";
 
 export function TechStack() {
   return (
-    <div className="md:min-w-3xl text-xs tracking-widest mb-10">
-      <p className="mb-2">TECH STACK</p>
+    <div className="md:min-w-3xl tracking-widest mb-10">
+      <p className="mb-2 text-xs">TECH STACK</p>
       <ul className="flex items-center gap-8 flex-wrap gap-y-4">
         {TECH_STACK.map((tech) => (
           <li
             key={tech.name}
-            className="flex items-center gap-2 text-sm text-muted-foreground/90 opacity-70 hover:opacity-100 hover:text-white transition cursor-default"
+            className="flex items-center gap-2 text-[12px] md:text-sm text-muted-foreground/90 opacity-70 hover:opacity-100 hover:text-white transition cursor-default"
           >
             <svg
               width="20"
