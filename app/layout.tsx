@@ -25,10 +25,12 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full px-6 sm:px-12 md:px-24 lg:px-48 xl:px-72 2xl:px-96">
+      <body className="min-h-full">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
-          <main className="flex flex-1">{children}</main>
+          <main className="flex flex-1 px-6 sm:px-12 md:px-24 lg:px-48 xl:px-72 2xl:px-96">
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>
