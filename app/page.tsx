@@ -6,14 +6,14 @@ import { ArrowRightIcon } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="mt-12 md:mt-24 w-full mx-auto">
+    <div className="mt-12 md:mt-24 w-full">
       <section
         id="hero"
         className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12"
       >
         <div className="order-2 md:order-1 flex flex-col gap-5 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <Metadata />
-          <h1 className="max-w-md text-7xl md:text-[5.2rem] mb-2 md:mb-5 font-semibold tracking-tight leading-[1.1] md:leading-20">
+          <h1 className="max-w-md text-6xl sm:text-7xl md:text-[5.2rem] mb-2 md:mb-5 font-semibold tracking-tight sm:leading-[1.1] md:leading-20">
             Sebastian Magnucki
           </h1>
           <div className="flex flex-col gap-2 md:gap-6 max-w-md leading-relaxed text-muted-foreground">
