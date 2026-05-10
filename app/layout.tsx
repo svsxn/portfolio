@@ -30,9 +30,7 @@ export default function RootLayout({
           <Header />
           {/* px-6 sm:px-12 md:px-24 lg:px-48 xl:px-72 2xl:px-96 */}
 
-          <main className="flex flex-1 px-6 mx-auto md:max-w-6xl">
-            {children}
-          </main>
+          <main className="flex flex-1 px-6 mx-auto max-w-6xl">{children}</main>
         </ThemeProvider>
       </body>
     </html>
