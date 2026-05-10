@@ -4,9 +4,10 @@ import { Separator } from "../ui/separator";
 interface Props {
   primaryText: string;
   secondaryText?: string;
+  showDot?: boolean;
 }
 
-export default function Label({ primaryText, secondaryText }: Props) {
+export default function Label({ primaryText, secondaryText, showDot }: Props) {
   return (
     <div
       className={cn(
@@ -14,8 +15,15 @@ export default function Label({ primaryText, secondaryText }: Props) {
         secondaryText && "flex items-center gap-2 sm:gap-4",
       )}
     >
-      <div className="flex items-center gap-2 sm:gap-3 text-accent">
-        <div className="size-1 sm:size-1.5 rounded-full bg-current ml-1" />
+      <div
+        className={cn(
+          "text-accent",
+          showDot && "flex items-center gap-2 sm:gap-3",
+        )}
+      >
+        {showDot && (
+          <div className="size-1 sm:size-1.5 rounded-full bg-current ml-1" />
+        )}
         <span>{primaryText}</span>
       </div>
       {secondaryText && (
