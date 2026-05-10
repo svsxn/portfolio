@@ -9,7 +9,7 @@ export function Avatar() {
         alt="Avatar"
         src="/avatar.png"
         loading="eager"
-        className="rounded-full mx-auto md:mx-0 size-80 md:size-105 border border-white/10 shadow-[0_0_80px_rgba(255,255,255,0.05)] animate-in fade-in zoom-in-95 duration-700 delay-150"
+        className="rounded-full mx-auto md:mx-0 size-80 md:size-fit lg:size-105 border border-white/10 shadow-[0_0_80px_rgba(255,255,255,0.05)] animate-in fade-in zoom-in-95 duration-700 delay-150"
       />
     </div>
   );
