@@ -1,8 +1,8 @@
 import { ArrowRightIcon } from "lucide-react";
-import { Metadata } from "./left-content/metadata";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { TechStack } from "./tech-stack/tech-stack";
 import { Avatar } from "./avatar";
+import Label from "../label";
 
 export default function Hero() {
   return (
@@ -11,7 +11,10 @@ export default function Hero() {
       className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12"
     >
       <div className="order-2 md:order-1 flex flex-col gap-5 animate-in fade-in slide-in-from-bottom-4 duration-700">
-        <Metadata />
+        <Label
+          primaryText="Full-stack developer"
+          secondaryText="Next.js & Supabase"
+        />
         <h1 className="max-w-md text-6xl sm:text-7xl md:text-[5.2rem] mb-2 md:mb-5 font-semibold tracking-tight sm:leading-[1.1] md:leading-20">
           Sebastian Magnucki
         </h1>
