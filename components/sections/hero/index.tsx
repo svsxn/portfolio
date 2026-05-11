@@ -30,10 +30,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-2 mb-2 sm:mb-14">
-          <Button
-            variant="secondary"
-            className="px-7 py-6 rounded-sm bg-accent hover:bg-accent hover:brightness-110 hover:-translate-y-0.5"
-          >
+          <Button className="px-7 py-6 rounded-sm hover:brightness-110 hover:-translate-y-0.5">
             View Projects <ArrowRightIcon className="ml-3" />
           </Button>
           <Button variant="outline" className="px-7 py-6 rounded-sm">

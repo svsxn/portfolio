@@ -8,7 +8,7 @@ export function TechStack() {
         {TECH_STACK.map((tech) => (
           <li
             key={tech.name}
-            className="flex items-center gap-2 text-[12px] md:text-sm text-muted-foreground/90 opacity-70 hover:opacity-100 hover:text-white transition cursor-default"
+            className="flex items-center gap-2 text-[12px] md:text-sm text-muted-foreground/90 opacity-70 hover:opacity-100 hover:text-foreground transition cursor-default"
           >
             <svg
               width="20"

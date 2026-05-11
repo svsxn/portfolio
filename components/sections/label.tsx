@@ -17,7 +17,7 @@ export default function Label({ primaryText, secondaryText, showDot }: Props) {
     >
       <div
         className={cn(
-          "text-accent",
+          "text-primary",
           showDot && "flex items-center gap-2 sm:gap-3",
         )}
       >
