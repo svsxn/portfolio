@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
-import { Separator } from "../ui/separator";
-import { ModeToggle } from "../theme/mode-toggle";
+import { Button } from "../../ui/button";
+import { Separator } from "../../ui/separator";
+import { ModeToggle } from "../../theme/mode-toggle";
 import { links } from "./links";
 
 function IconButton({

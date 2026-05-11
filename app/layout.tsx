@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
-import { Header } from "@/components/header";
+import { Header } from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,9 +29,8 @@ export default function RootLayout({
       <body className="min-h-full">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
-          {/* px-6 sm:px-12 md:px-24 lg:px-48 xl:px-72 2xl:px-96 */}
-
           <main className="flex flex-1 px-6 mx-auto max-w-6xl">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
