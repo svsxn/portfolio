@@ -2,9 +2,9 @@ import { TECH_STACK } from "./tech-items";
 
 export function TechStack() {
   return (
-    <div className="md:min-w-3xl tracking-widest mb-10">
+    <div className="md:min-w-3xl tracking-widest">
       <p className="mb-2 text-xs">TECH STACK</p>
-      <ul className="flex items-center gap-8 flex-wrap gap-y-4">
+      <ul className="flex items-center gap-6 md:gap-8 flex-wrap gap-y-4">
         {TECH_STACK.map((tech) => (
           <li
             key={tech.name}
