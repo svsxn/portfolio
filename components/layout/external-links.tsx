@@ -1,4 +1,4 @@
-export const links = [
+export const externalLinks = [
   {
     href: "https://github.com/svsxn",
     svg: (
