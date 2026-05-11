@@ -4,13 +4,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-
-const links = [
-  { href: "#projects", label: "Projects" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
-];
+import { links } from "../links";
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -39,7 +33,7 @@ export default function MobileMenu() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="border-b border-border py-4 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="border-b py-4 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.label}
             </Link>
