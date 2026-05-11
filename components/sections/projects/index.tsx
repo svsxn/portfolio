@@ -12,7 +12,7 @@ export default function Projects() {
         Focused on fast interfaces, clean architecture, and scalable backend
         systems.
       </p>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-4">
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
