@@ -4,8 +4,8 @@ import Label from "../label";
 
 export default function ProjectCard() {
   return (
-    <div className="bg-card border rounded-xl px-8 py-6">
-      <div className="flex flex-col gap-4">
+    <div className="flex flex-col md:flex-row justify-between border rounded-xl bg-linear-to-t from-card from-70% to-white/10">
+      <div className="order-2 md:order-1 flex flex-col gap-4 py-6 pl-8">
         <div className="flex flex-col gap-2">
           <Label primaryText="SAAS Dashboard" />
           <h3 className="text-2xl font-semibold tracking-tight">
@@ -41,6 +41,7 @@ export default function ProjectCard() {
           </Button>
         </div>
       </div>
+      <div className="order-1 md:order-2 w-180 h-65 bg-neutral-800 place-self-end rounded-md mask-[linear-gradient(to_bottom,black_90%,transparent_100%)] my-2 mr-2"></div>
     </div>
   );
 }
