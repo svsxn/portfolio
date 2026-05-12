@@ -24,7 +24,7 @@ export default function ProjectCard() {
           </div>
           <div className="text-xs bg-muted px-2 py-1 rounded-sm">Tailwind</div>
         </div>
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
           <Button className="text-[13px] px-6 py-5 rounded-sm hover:brightness-110 hover:-translate-y-0.5">
             Live Demo
             <ArrowUpRightIcon className="ml-3" />
