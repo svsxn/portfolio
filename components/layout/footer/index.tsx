@@ -19,7 +19,7 @@ export default function Footer() {
               </LinkIconButton>
             ))}
           </div>
-          <div className="flex gap-8">
+          <div className="flex flex-col sm:flex-row items-end gap-4 sm:gap-8">
             {links.map((link) => (
               <Link
                 key={link.href}
