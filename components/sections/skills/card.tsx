@@ -1,0 +1,3 @@
+export default function Card() {
+  return <div className="w-46 h-64 bg-card"></div>;
+}
