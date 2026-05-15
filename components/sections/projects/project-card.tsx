@@ -4,7 +4,7 @@ import Label from "../label";
 
 export default function ProjectCard() {
   return (
-    <div className="flex flex-col md:flex-row justify-between md:gap-6 border rounded-xl bg-linear-to-t from-card from-70% to-white/10">
+    <div className="group flex flex-col md:flex-row justify-between md:gap-6 border rounded-xl bg-linear-to-t from-card from-70% to-white/10 hover:border-white/15 transition-colors">
       <div className="order-2 md:order-1 flex flex-col gap-4 py-5 md:py-6 px-4 md:px-0 md:pl-8">
         <div className="flex flex-col gap-2">
           <Label primaryText="SAAS Dashboard" />
@@ -38,7 +38,7 @@ export default function ProjectCard() {
           </Button>
         </div>
       </div>
-      <div className="order-1 md:order-2 w-180 max-w-full h-65 bg-neutral-800 place-self-end rounded-md mask-[linear-gradient(to_bottom,black_90%,transparent_100%)] md:my-2 md:mr-2"></div>
+      <div className="order-1 md:order-2 w-180 max-w-full h-65 bg-neutral-800 place-self-end rounded-md mask-[linear-gradient(to_bottom,black_90%,transparent_100%)] md:my-2 md:mr-2 group-hover:scale-[1.02] transition-transform duration-500"></div>
     </div>
   );
 }
