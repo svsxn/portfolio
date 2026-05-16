@@ -6,7 +6,7 @@ import MobileMenu from "./mobile-menu";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
-      <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between px-6">
+      <div className="relative mx-auto flex h-18 w-full max-w-6xl items-center justify-between px-6">
         <Link
           href="#hero"
           aria-label="Go to hero section"

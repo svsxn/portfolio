@@ -21,19 +21,19 @@ export default function MobileMenu() {
 
       <div
         className={cn(
-          "absolute left-0 top-20 w-full border-b border-border bg-background/95 backdrop-blur transition-all duration-200",
+          "absolute left-0 top-full w-full border-b bg-background shadow-2xl transition-all duration-200",
           open
             ? "visible translate-y-0 opacity-100"
             : "invisible -translate-y-2 opacity-0",
         )}
       >
-        <nav className="flex flex-col px-6 py-6">
+        <nav className="mx-auto flex w-full max-w-6xl flex-col px-6 py-4">
           {navItems.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="border-b py-4 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="border-b border-border/70 py-4 text-sm font-medium text-muted-foreground transition-colors last:border-b-0 hover:text-foreground focus:outline-none focus-visible:text-foreground"
             >
               {link.label}
             </Link>
