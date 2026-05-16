@@ -1,12 +1,16 @@
+import { FadeUp } from "@/components/motion/fade-up";
 import Label from "../label";
 import Card from "./card";
+import { Stagger } from "@/components/motion/stagger";
 
 export default function Skills() {
   return (
     <section id="skills" className="flex flex-col gap-4 scroll-mt-24">
-      <Label primaryText="Skills & Stack" />
+      <FadeUp>
+        <Label primaryText="Skills & Stack" />
+      </FadeUp>
       <div className="flex justify-between">
-        <div className="flex flex-col gap-4">
+        <FadeUp className="flex flex-col gap-4">
           <h2 className="text-4xl font-semibold tracking-tight max-w-sm">
             Building fast products with modern web technologies
           </h2>
@@ -15,14 +19,14 @@ export default function Skills() {
             applications, realtime systems, and mainstainable backend
             infrastructure.
           </p>
-        </div>
-        <div className="grid grid-cols-3 content-center gap-4">
+        </FadeUp>
+        <Stagger className="grid grid-cols-3 content-center gap-4">
           <Card title="Frontend" />
           <Card title="Backend" />
           <Card title="Database" />
           <Card title="Infrastructure" />
           <Card title="Tools" />
-        </div>
+        </Stagger>
       </div>
     </section>
   );
