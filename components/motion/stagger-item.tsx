@@ -25,6 +25,10 @@ export function StaggerItem({ children, className }: StaggerItemProps) {
         },
       }}
       className={className}
+      whileHover={{
+        y: -2,
+        transition: { duration: 0.2 },
+      }}
     >
       {children}
     </motion.div>
