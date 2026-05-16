@@ -6,11 +6,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 pt-12 md:pt-24 scroll-mt-20"
+      className="relative isolate scroll-mt-20 overflow-visible"
     >
       <Background />
-      <Content />
-      <Avatar />
+      <div className="mx-auto grid min-h-[calc(100svh-5rem)] w-full max-w-6xl items-center px-6 py-16 md:py-20 lg:grid-cols-[1fr_0.92fr] lg:gap-14 lg:py-24">
+        <Content />
+        <Avatar />
+      </div>
     </section>
   );
 }

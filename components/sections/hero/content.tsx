@@ -2,7 +2,7 @@ import { FadeUp } from "@/components/motion/fade-up";
 import Label from "../label";
 import PrimaryCta from "./cta/primary-cta";
 import SecondaryCta from "./cta/secondary-cta";
-import { TechStack } from "./tech-stack/tech-stack";
+import TechStack from "./tech-stack";
 
 export default function Content() {
   return (
@@ -27,7 +27,9 @@ export default function Content() {
         <PrimaryCta />
         <SecondaryCta />
       </FadeUp>
-      <TechStack />
+      <FadeUp className="mt-16">
+        <TechStack />
+      </FadeUp>
     </div>
   );
 }
