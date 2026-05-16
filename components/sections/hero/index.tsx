@@ -18,10 +18,22 @@ export default function Hero() {
           primaryText="Full-stack developer"
           secondaryText="Next.js & Supabase"
         />
-        <h1 className="max-w-md text-6xl sm:text-7xl md:text-[5.2rem] mb-2 md:mb-5 font-semibold tracking-tight sm:leading-[1.1] md:leading-[0.88]">
+        <h1 className="text-balance text-6xl font-bold leading-[0.88] tracking-[-0.06em] text-foreground sm:text-7xl lg:text-[5.8rem]">
           Sebastian Magnucki
         </h1>
-        <div className="flex flex-col gap-2 md:gap-6 max-w-md leading-relaxed text-muted-foreground">
+        {/* <h1 className="max-w-md text-6xl sm:text-7xl md:text-[5.2rem] mb-2 md:mb-5 font-semibold tracking-tight sm:leading-[1.1] md:leading-[0.88]">
+          Sebastian Magnucki
+        </h1> */}
+        <p className="mt-8 max-w-xl text-lg leading-8 text-foreground/80">
+          I design and build performant web applications with modern React
+          architecture, clean data flows, and scalable Supabase backends.
+        </p>
+        <p className="mt-5 max-w-xl text-base leading-8 text-muted-foreground">
+          Most of my work involves SaaS platforms, dashboards, and real-time
+          product experiences built to stay fast, maintainable, and easy to
+          extend.
+        </p>
+        {/* <div className="flex flex-col gap-2 md:gap-6 max-w-md leading-relaxed text-muted-foreground">
           <p>
             I build web apps with Next.js and Supabase, focusing on clean
             architecture, real-time features, and performance.
@@ -30,7 +42,7 @@ export default function Hero() {
             Most of my work involves dashboards and SaaS products designed to
             stay fast, maintainable, and easy to extend.
           </p>
-        </div>
+        </div> */}
         <FadeUp className="mt-9 flex flex-col gap-4 sm:flex-row">
           <PrimaryCta />
           <SecondaryCta />
