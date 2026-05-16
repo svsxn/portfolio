@@ -9,7 +9,7 @@ export default function Skills() {
       <FadeUp>
         <Label primaryText="Skills & Stack" />
       </FadeUp>
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row justify-between gap-4">
         <FadeUp className="flex flex-col gap-4">
           <h2 className="text-4xl font-semibold tracking-tight max-w-sm">
             Building fast products with modern web technologies
@@ -20,7 +20,7 @@ export default function Skills() {
             infrastructure.
           </p>
         </FadeUp>
-        <Stagger className="grid grid-cols-3 content-center gap-4">
+        <Stagger className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Card title="Frontend" />
           <Card title="Backend" />
           <Card title="Database" />
