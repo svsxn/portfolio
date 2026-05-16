@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 pt-12 md:pt-24"
+      className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 pt-12 md:pt-24 scroll-mt-20"
     >
       <div className="order-2 md:order-1 flex flex-col gap-5 animate-in fade-in slide-in-from-bottom-4 duration-700">
         <Label
