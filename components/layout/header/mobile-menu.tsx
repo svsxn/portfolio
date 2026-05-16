@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { links } from "../links";
+import { navItems } from "../links";
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -28,7 +28,7 @@ export default function MobileMenu() {
         )}
       >
         <nav className="flex flex-col px-6 py-6">
-          {links.map((link) => (
+          {navItems.map((link) => (
             <Link
               key={link.href}
               href={link.href}

@@ -9,7 +9,12 @@ export function LinkIconButton({
   children: React.ReactNode;
 }) {
   return (
-    <Button variant="outline" size="icon" asChild>
+    <Button
+      asChild
+      variant="ghost"
+      size="icon"
+      className="size-9 rounded-xl text-muted-foreground hover:bg-primary/10 hover:text-foreground"
+    >
       <Link href={href} target="_blank" rel="noreferrer">
         {children}
       </Link>
