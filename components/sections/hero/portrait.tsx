@@ -1,3 +1,4 @@
+import { FloatingGlow } from "@/components/motion/floating-glow";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 
@@ -8,8 +9,7 @@ export default function Portrait() {
       // delay={0.18}
       // scale
     >
-      <div className="absolute -inset-12 -z-10 rounded-full bg-primary/10 blur-3xl" />
-
+      <FloatingGlow className="absolute -inset-12 -z-10 rounded-full bg-primary/10 blur-3xl" />
       <div className="relative aspect-square overflow-hidden rounded-full border border-border bg-card shadow-[0_0_0_12px_--alpha(var(--foreground)/2%),0_40px_120px_--alpha(var(--background)/55%)] transition will-change-transform">
         <Image
           src="/portrait.jpg"
