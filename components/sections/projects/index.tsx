@@ -4,7 +4,7 @@ import ProjectCard from "./project-card";
 export default function Projects() {
   return (
     <section id="projects" className="flex flex-col gap-4 scroll-mt-24">
-      <Label primaryText="Featured work" showDot />
+      <Label primaryText="Featured work" />
       <h2 className="text-4xl font-semibold tracking-tight">
         Selected projects I&apos;ve worked on
       </h2>

@@ -4,7 +4,7 @@ import Card from "./card";
 export default function Skills() {
   return (
     <section id="skills" className="flex flex-col gap-4 scroll-mt-24">
-      <Label primaryText="Skills & Stack" showDot />
+      <Label primaryText="Skills & Stack" />
       <div className="flex justify-between">
         <div className="flex flex-col gap-4">
           <h2 className="text-4xl font-semibold tracking-tight max-w-sm">
@@ -17,11 +17,11 @@ export default function Skills() {
           </p>
         </div>
         <div className="grid grid-cols-3 content-center gap-4">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card title="Frontend" />
+          <Card title="Backend" />
+          <Card title="Database" />
+          <Card title="Infrastructure" />
+          <Card title="Tools" />
         </div>
       </div>
     </section>

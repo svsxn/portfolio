@@ -7,7 +7,7 @@ export default function ProjectCard() {
     <div className="group flex flex-col md:flex-row justify-between md:gap-6 border rounded-xl bg-linear-to-t from-card from-70% to-white/10 hover:border-white/15 transition-colors">
       <div className="order-2 md:order-1 flex flex-col gap-4 py-5 md:py-6 px-4 md:px-0 md:pl-8">
         <div className="flex flex-col gap-2">
-          <Label primaryText="SAAS Dashboard" />
+          <Label primaryText="SAAS Dashboard" hideDot />
           <h3 className="text-2xl font-semibold tracking-tight">
             Realtime analytics platform
           </h3>

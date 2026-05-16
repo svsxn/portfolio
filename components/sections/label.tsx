@@ -4,24 +4,24 @@ import { Separator } from "../ui/separator";
 interface Props {
   primaryText: string;
   secondaryText?: string;
-  showDot?: boolean;
+  hideDot?: boolean;
 }
 
-export default function Label({ primaryText, secondaryText, showDot }: Props) {
+export default function Label({ primaryText, secondaryText, hideDot }: Props) {
   return (
     <div
       className={cn(
-        "text-[11px] sm:text-xs font-semibold tracking-widest uppercase text-nowrap",
+        "text-[11px] sm:text-xs font-semibold uppercase tracking-widest text-nowrap",
         secondaryText && "flex items-center gap-2 sm:gap-4",
       )}
     >
       <div
         className={cn(
           "text-primary",
-          showDot && "flex items-center gap-2 sm:gap-3",
+          !hideDot && "flex items-center gap-2 sm:gap-3 text-primary",
         )}
       >
-        {showDot && (
+        {!hideDot && (
           <div className="size-1 sm:size-1.5 rounded-full bg-current ml-1" />
         )}
         <span>{primaryText}</span>
