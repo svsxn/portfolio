@@ -14,7 +14,6 @@ export default function Hero() {
         <Label
           primaryText="Full-stack developer"
           secondaryText="Next.js & Supabase"
-          showDot
         />
         <h1 className="max-w-md text-6xl sm:text-7xl md:text-[5.2rem] mb-2 md:mb-5 font-semibold tracking-tight sm:leading-[1.1] md:leading-20">
           Sebastian Magnucki
