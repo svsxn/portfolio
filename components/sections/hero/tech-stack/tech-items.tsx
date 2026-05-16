@@ -3,7 +3,7 @@ type TechItem = {
   iconPaths: React.ReactNode;
 };
 
-export const TECH_STACK: TechItem[] = [
+export const techStack: readonly TechItem[] = [
   {
     name: "Next.js",
     iconPaths: (

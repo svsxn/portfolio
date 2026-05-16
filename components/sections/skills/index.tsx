@@ -5,7 +5,10 @@ import { Stagger } from "@/components/motion/stagger";
 
 export default function Skills() {
   return (
-    <section id="skills" className="flex flex-col gap-4 scroll-mt-24">
+    <section
+      id="skills"
+      className="flex flex-col gap-4 scroll-mt-24 mx-auto w-full max-w-6xl px-6"
+    >
       <FadeUp>
         <Label primaryText="Skills & Stack" />
       </FadeUp>

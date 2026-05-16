@@ -24,13 +24,15 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} h-full antialiased`}
+      className={`${inter.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          <main className="flex flex-1 px-6 mx-auto max-w-6xl">{children}</main>
-          <Footer />
+          <div className="relative flex min-h-svh flex-col overflow-x-clip">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
