@@ -5,9 +5,13 @@ import MobileMenu from "./mobile-menu";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur">
-      <div className="flex items-center justify-between h-20 mx-auto md:max-w-6xl px-6">
-        <Link href="#hero" className="text-3xl font-semibold tracking-tight">
+    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
+      <div className="relative mx-auto flex h-18 w-full max-w-6xl items-center justify-between px-6">
+        <Link
+          href="#hero"
+          aria-label="Go to hero section"
+          className="text-2xl font-bold tracking-tight transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        >
           <span>S</span>
           <span className="text-primary">M</span>
         </Link>

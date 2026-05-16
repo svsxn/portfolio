@@ -8,7 +8,7 @@ interface Props {
 
 export default function Label({ primaryText, secondaryText, hideDot }: Props) {
   return (
-    <div className="mb-7 flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-muted-foreground">
+    <div className="mb-6 md:mb-7 flex flex-wrap items-center gap-3 text-[0.68rem] sm:text-xs font-bold uppercase tracking-[0.22em] text-muted-foreground">
       <div className={!hideDot ? "flex items-center gap-2 sm:gap-3" : ""}>
         {!hideDot && (
           <span className="size-2 rounded-full bg-primary shadow-[0_0_18px_--alpha(var(--primary)/90%)]" />

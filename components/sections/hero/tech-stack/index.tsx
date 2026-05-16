@@ -6,11 +6,11 @@ export default function TechStack() {
       <p className="text-xs font-bold uppercase tracking-[0.24em] text-foreground/80">
         Tech stack
       </p>
-      <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground/90">
+      <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm text-muted-foreground sm:flex sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
         {techStack.map((item) => (
           <li
             key={item.name}
-            className="flex items-center gap-2 opacity-70 hover:opacity-100 hover:text-foreground transition-colors cursor-default"
+            className="flex items-center gap-2 opacity-70 hover:opacity-100 hover:text-foreground transition-[opacity,colors] cursor-default"
           >
             <svg
               width="20"

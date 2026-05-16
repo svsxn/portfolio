@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { links } from "../links";
+import { navItems } from "../links";
 import { LinkIconButton } from "../link-icon-button";
 import { externalLinks } from "../external-links";
 
@@ -20,13 +20,13 @@ export default function Footer() {
             ))}
           </div>
           <div className="flex flex-col sm:flex-row items-end gap-4 sm:gap-8">
-            {links.map((link) => (
+            {navItems.map((item) => (
               <Link
-                key={link.href}
-                href={link.href}
+                key={item.href}
+                href={item.href}
                 className="text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
-                {link.label}
+                {item.label}
               </Link>
             ))}
           </div>
