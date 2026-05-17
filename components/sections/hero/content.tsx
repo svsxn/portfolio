@@ -29,7 +29,7 @@ export default function Content() {
       </FadeInItem>
       <FadeInItem
         as="p"
-        className="mt-4 max-w-xl text-sm leading-7 text-muted-foreground sm:text-base sm:leading-8"
+        className="mt-4 max-w-xl text-sm leading-7 text-foreground/70 sm:text-base sm:leading-8"
       >
         Most of my work involves SaaS platforms, dashboards, and real-time
         product experiences built to stay fast, maintainable, and easy to
