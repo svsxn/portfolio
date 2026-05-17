@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Navbar } from "./navbar";
 import { Actions } from "./actions";
 import MobileMenu from "./mobile-menu";
+import Image from "next/image";
 
 export function Header() {
   return (
@@ -10,10 +11,9 @@ export function Header() {
         <Link
           href="#hero"
           aria-label="Go to hero section"
-          className="text-2xl font-bold tracking-tight transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
-          <span>S</span>
-          <span className="text-primary">M</span>
+          <Image src="/logo.svg" alt="Logo" width={62} height={34} priority />
         </Link>
         <div className="flex items-center gap-12">
           <Navbar />
