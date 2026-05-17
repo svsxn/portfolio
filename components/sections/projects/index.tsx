@@ -5,10 +5,10 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative isolate scroll-mt-24 overflow-hidden px-6 py-24 sm:py-28 lg:py-32"
+      className="relative isolate scroll-mt-24 overflow-hidden "
     >
       <Background />
-      <div className="mx-auto w-full max-w-6xl">
+      <div className="mx-auto w-full max-w-6xl px-6 py-24 sm:py-28 lg:py-32">
         <div className="max-w-2xl">
           <Label primaryText="Selected work" />
           <h2 className="mt-6 text-balance text-4xl font-bold tracking-[-0.045em] sm:text-5xl lg:text-6xl">
