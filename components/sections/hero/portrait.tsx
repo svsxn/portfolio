@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Portrait() {
   return (
     <FadeIn
-      className="relative hidden w-full max-w-107.5 lg:ml-auto lg:block"
+      className="relative w-full max-w-107.5 lg:ml-auto lg:block"
       delay={0.18}
       scale
     >
