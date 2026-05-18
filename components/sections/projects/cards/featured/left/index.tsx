@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { CalendarIcon, UserIcon } from "lucide-react";
 import Label from "./label";
+import Highlights from "./highlights";
 
 export default function LeftSection({ project }: { project: Project }) {
   return (
@@ -29,7 +30,7 @@ export default function LeftSection({ project }: { project: Project }) {
           </div>
         </div>
       </dl>
-      <div></div>
+      <Highlights highlights={project.highlights} />
     </div>
   );
 }
