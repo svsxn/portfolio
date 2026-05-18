@@ -1,6 +1,6 @@
 import Background from "./background";
 import LeftSection from "./left";
-import RightSection from "./right";
+import Preview from "./preview";
 
 export default function FeaturedProject({ project }: { project: Project }) {
   return (
@@ -8,7 +8,7 @@ export default function FeaturedProject({ project }: { project: Project }) {
       <Background />
       <div className="relative grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <LeftSection project={project} />
-        <RightSection />
+        <Preview />
       </div>
     </article>
   );

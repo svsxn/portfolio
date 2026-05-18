@@ -6,7 +6,7 @@ export default function Content() {
   const [featuredProject, ...otherProjects] = projects;
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-24 lg:py-28">
+    <div className="mx-auto w-full max-w-6xl px-6 py-16 sm:py-20 lg:py-24">
       <div className="max-w-2xl">
         <Label primaryText="Selected work" />
         <h2 className="mt-6 text-balance text-4xl font-bold tracking-[-0.045em] sm:text-5xl lg:text-6xl">

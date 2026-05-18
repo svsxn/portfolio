@@ -1,4 +1,4 @@
-export default function RightSection() {
+export default function Preview() {
   return (
     <div className="relative overflow-hidden rounded-2xl border bg-background/70 shadow-2xl">
       <div className="flex h-9 items-center gap-2 border-b px-4">
