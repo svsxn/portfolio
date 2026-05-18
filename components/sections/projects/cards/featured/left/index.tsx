@@ -16,16 +16,16 @@ export default function LeftSection({ project }: { project: Project }) {
         {project.description}
       </p>
       <dl className="mt-6 flex gap-6">
-        <div className="flex gap-3 items-center">
-          <UserIcon aria-hidden />
+        <div className="flex items-center gap-3">
+          <UserIcon className="size-5 text-muted-foreground" aria-hidden />
           <div>
             <dt className="text-xs font-medium text-primary">Role</dt>
             <dd className=" text-sm">{project.role}</dd>
           </div>
         </div>
-        <Separator orientation="vertical" />
+        <Separator orientation="vertical" className="h-10" />
         <div className="flex gap-3 items-center">
-          <CalendarIcon aria-hidden />
+          <CalendarIcon className="size-5 text-muted-foreground" aria-hidden />
           <div>
             <dt className="text-xs font-medium text-primary">Year</dt>
             <dd className=" text-sm">{project.year}</dd>

@@ -15,7 +15,7 @@ export default function Highlights({ highlights, classname }: Props) {
             key={highlight}
             className="flex gap-2 text-sm leading-6 text-muted-foreground"
           >
-            <CheckIcon className="mt-1" color="var(--primary)" size={18} />
+            <CheckIcon className="mt-1.25" color="var(--primary)" size={18} />
             <span>{highlight}</span>
           </li>
         ))}
