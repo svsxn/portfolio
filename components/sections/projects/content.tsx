@@ -12,7 +12,7 @@ export default function Content() {
         <h2 className="mt-6 text-balance text-4xl font-bold tracking-[-0.045em] sm:text-5xl lg:text-6xl">
           Selected Projects
         </h2>
-        <p className="mt-5 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
+        <p className="mt-5 max-w-xl text-base leading-7 text-muted-foreground sm:leading-8">
           A focused selection of web applications built with Next.js, Supabase,
           TypeScript, and scalable product architecture.
         </p>

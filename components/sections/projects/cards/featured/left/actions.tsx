@@ -11,7 +11,9 @@ type Props = {
 
 export default function Actions({ liveUrl, githubUrl, classname }: Props) {
   return (
-    <div className={cn("flex flex-wrap gap-3", classname)}>
+    <div
+      className={cn("grid grid-cols-2 gap-3 sm:flex sm:flex-wrap", classname)}
+    >
       <Button
         disabled={!liveUrl}
         asChild={!!liveUrl}
