@@ -1,20 +1,21 @@
 import { CheckIcon } from "lucide-react";
 
-interface Props {
+type Props = {
   highlights: string[];
-}
+  classname?: string;
+};
 
-export default function Highlights({ highlights }: Props) {
+export default function Highlights({ highlights, classname }: Props) {
   return (
-    <div className="mt-6">
+    <div className={classname}>
       <h4 className="text-sm font-semibold text-primary">Highlights</h4>
       <ul className="mt-2 space-y-1">
         {highlights.map((highlight) => (
           <li
             key={highlight}
-            className="flex gap-2 items-center text-sm leading-6 text-muted-foreground"
+            className="flex gap-2 text-sm leading-6 text-muted-foreground"
           >
-            <CheckIcon color="var(--primary)" size={18} />
+            <CheckIcon className="mt-1" color="var(--primary)" size={18} />
             <span>{highlight}</span>
           </li>
         ))}

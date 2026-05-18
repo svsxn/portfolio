@@ -2,6 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { CalendarIcon, UserIcon } from "lucide-react";
 import Label from "./label";
 import Highlights from "./highlights";
+import Stack from "./stack";
 
 export default function LeftSection({ project }: { project: Project }) {
   return (
@@ -30,7 +31,8 @@ export default function LeftSection({ project }: { project: Project }) {
           </div>
         </div>
       </dl>
-      <Highlights highlights={project.highlights} />
+      <Highlights highlights={project.highlights} classname="mt-6" />
+      <Stack stack={project.stack} classname="mt-4" />
     </div>
   );
 }
