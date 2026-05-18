@@ -3,6 +3,7 @@ import { CalendarIcon, UserIcon } from "lucide-react";
 import Label from "./label";
 import Highlights from "./highlights";
 import Stack from "./stack";
+import Actions from "./actions";
 
 export default function LeftSection({ project }: { project: Project }) {
   return (
@@ -33,6 +34,11 @@ export default function LeftSection({ project }: { project: Project }) {
       </dl>
       <Highlights highlights={project.highlights} classname="mt-6" />
       <Stack stack={project.stack} classname="mt-4" />
+      <Actions
+        liveUrl={project.liveUrl}
+        githubUrl={project.githubUrl}
+        classname="mt-6"
+      />
     </div>
   );
 }
