@@ -8,10 +8,9 @@ export const projects: Project[] = [
     role: "Full-Stack Developer",
     stack: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Recharts"],
     highlights: [
-      "Secure authentication with Supabase Auth and RLS",
-      "Real-time data updates with Supabase Realtime",
+      "Secure Supabase Auth with Row Level Security",
+      "Real-time data updates and responsive dashboard UI",
       "Advanced filtering, date ranges, and data visualizations",
-      "Optimistic UI and responsive dashboard components",
     ],
     liveUrl: "#",
     githubUrl: "#",
