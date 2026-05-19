@@ -4,6 +4,7 @@ import { ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
 import Background from "./background";
 import Image from "next/image";
+import { FadeInItem } from "@/components/motion/fade-in";
 
 type Props = {
   project: Project;
@@ -11,7 +12,10 @@ type Props = {
 
 export default function Project({ project }: Props) {
   return (
-    <article className="group relative overflow-hidden rounded-2xl border bg-card/45 p-5 shadow-xl transition-colors hover:border-primary/35 hover:bg-card/65 sm:p-6">
+    <FadeInItem
+      as="article"
+      className="group relative overflow-hidden rounded-2xl border bg-card/45 p-5 shadow-xl transition-colors hover:border-primary/35 hover:bg-card/65 sm:p-6"
+    >
       <Background />
       <div className="relative aspect-16/10 overflow-hidden bg-background/60 rounded-xl">
         <Image
@@ -70,6 +74,6 @@ export default function Project({ project }: Props) {
           </Button>
         ) : null}
       </div>
-    </article>
+    </FadeInItem>
   );
 }
