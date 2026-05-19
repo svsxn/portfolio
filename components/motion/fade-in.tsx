@@ -62,8 +62,8 @@ export function FadeIn({
     return (
       <motion.div
         initial={{ opacity: 0, scale: 0.97, y: 18 }}
-        animate={viewport ? undefined : { opacity: 1, scale: 1, y: 0 }}
         whileInView={viewport ? { opacity: 1, scale: 1, y: 0 } : undefined}
+        animate={!viewport ? { opacity: 1, scale: 1, y: 0 } : undefined}
         viewport={
           viewport ? { once: true, margin: "0px 0px -20% 0px" } : undefined
         }
@@ -82,8 +82,8 @@ export function FadeIn({
   return (
     <motion.div
       initial="hidden"
-      animate={viewport ? undefined : "visible"}
       whileInView={viewport ? "visible" : undefined}
+      animate={!viewport ? "visible" : undefined}
       viewport={
         viewport ? { once: true, margin: "0px 0px -20% 0px" } : undefined
       }

@@ -10,7 +10,6 @@ export default function Content() {
   return (
     <FadeIn
       stagger
-      viewport
       className="mx-auto w-full max-w-6xl px-6 py-12 sm:py-16 lg:py-20"
     >
       <div className="max-w-2xl">
