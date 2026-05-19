@@ -1,6 +1,7 @@
 import { projects } from "@/data/projects";
 import Label from "../label";
 import FeaturedProject from "./cards/featured";
+import Project from "./cards/other";
 
 export default function Content() {
   const [featuredProject, ...otherProjects] = projects;
@@ -22,15 +23,7 @@ export default function Content() {
       </div>
       <div className="mt-6 grid gap-6 lg:grid-cols-3">
         {otherProjects.map((project) => (
-          <article
-            key={project.title}
-            className="rounded-2xl border bg-card/40 p-5"
-          >
-            <h3 className="font-medium">{project.title}</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              {project.description}
-            </p>
-          </article>
+          <Project key={project.title} project={project} />
         ))}
       </div>
     </div>
