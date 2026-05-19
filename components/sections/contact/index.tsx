@@ -18,7 +18,7 @@ export default function Contact() {
             backend logic, send me a message
           </p>
         </div>
-        <div className="mt-8 items-center gap-2 rounded-full border bg-background/85 px-4 py-2.5 text-xs font-medium text-muted-foreground shadow-xl backdrop-blur-md lg:flex w-fit">
+        <div className="mt-8 flex items-center gap-2 rounded-full border bg-background/85 px-4 py-2.5 text-xs font-medium text-muted-foreground shadow-xl backdrop-blur-md w-fit">
           <span className="size-2 rounded-full bg-primary shadow-[0_0_12px_--alpha(var(--primary)/80%)]" />
           <span className="whitespace-nowrap">
             Available for selected projects
