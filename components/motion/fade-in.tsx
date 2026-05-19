@@ -14,6 +14,7 @@ type FadeInProps = {
   stagger?: boolean;
   delay?: number;
   scale?: boolean;
+  viewport?: boolean;
 };
 
 type FadeInItemProps<TElement extends ElementType> = {
@@ -55,12 +56,15 @@ export function FadeIn({
   stagger = false,
   delay = 0,
   scale = false,
+  viewport = false,
 }: FadeInProps) {
   if (scale) {
     return (
       <motion.div
         initial={{ opacity: 0, scale: 0.97, y: 18 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
+        animate={viewport ? undefined : { opacity: 1, scale: 1, y: 0 }}
+        whileInView={viewport ? { opacity: 1, scale: 1, y: 0 } : undefined}
+        viewport={viewport ? { once: true, amount: 0.2 } : undefined}
         transition={{
           duration: 0.8,
           ease: [0.22, 1, 0.36, 1],
@@ -76,7 +80,9 @@ export function FadeIn({
   return (
     <motion.div
       initial="hidden"
-      animate="visible"
+      animate={viewport ? undefined : "visible"}
+      whileInView={viewport ? "visible" : undefined}
+      viewport={viewport ? { once: true, amount: 0.2 } : undefined}
       variants={createContainerVariants(stagger, delay)}
       className={className}
     >
