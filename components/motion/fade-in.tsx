@@ -64,7 +64,9 @@ export function FadeIn({
         initial={{ opacity: 0, scale: 0.97, y: 18 }}
         animate={viewport ? undefined : { opacity: 1, scale: 1, y: 0 }}
         whileInView={viewport ? { opacity: 1, scale: 1, y: 0 } : undefined}
-        viewport={viewport ? { once: true, amount: 0.2 } : undefined}
+        viewport={
+          viewport ? { once: true, margin: "0px 0px -10% 0px" } : undefined
+        }
         transition={{
           duration: 0.8,
           ease: [0.22, 1, 0.36, 1],
@@ -82,7 +84,9 @@ export function FadeIn({
       initial="hidden"
       animate={viewport ? undefined : "visible"}
       whileInView={viewport ? "visible" : undefined}
-      viewport={viewport ? { once: true, amount: 0.2 } : undefined}
+      viewport={
+        viewport ? { once: true, margin: "0px 0px -30% 0px" } : undefined
+      }
       variants={createContainerVariants(stagger, delay)}
       className={className}
     >
