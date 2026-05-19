@@ -13,14 +13,14 @@ export default function Project({ project }: Props) {
   return (
     <article className="group relative overflow-hidden rounded-2xl border bg-card/45 p-5 shadow-xl transition-colors hover:border-primary/35 hover:bg-card/65 sm:p-6">
       <Background />
-      <div className="relative aspect-16/10 overflow-hidden bg-background/60 rounded-t-xl">
+      <div className="relative aspect-16/10 overflow-hidden bg-background/60 rounded-xl">
         <Image
           src={"/preview.png"}
           alt={`${project.title} preview`}
           fill
           sizes="(min-width: 1024px) 360px, 100vw"
           unoptimized
-          className="object-cover opacity-85 transition duration-500 group-hover:scale-[1.025] group-hover:opacity-100 "
+          className="object-cover brightness-80 transition duration-500 group-hover:scale-[1.025] group-hover:brightness-100 "
         />
       </div>
       <h3 className="mt-6 text-lg font-bold tracking-[-0.035em]">
