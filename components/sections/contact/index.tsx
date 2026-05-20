@@ -5,10 +5,10 @@ export default function Contact() {
     <section id="contact" className="">
       <div className="mx-auto w-full max-w-6xl px-6 py-12 sm:py-16 lg:py-20">
         <Label primaryText="Contact" />
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold max-w-xs sm:max-w-md lg:max-w-lg tracking-[-0.045em]">
+        <h2 className="max-w-xs text-4xl font-bold tracking-[-0.045em] sm:max-w-md sm:text-5xl lg:max-w-lg lg:text-6xl">
           Let&apos;s build something clean.
         </h2>
-        <div className="mt-6 text-muted-foreground max-w-116 space-y-5">
+        <div className="text-muted-foreground mt-6 max-w-116 space-y-5">
           <p>
             I&apos;m available for selected projects involving dashboards, SaaS
             products, admin tools, and full-stack web applications.
@@ -18,8 +18,8 @@ export default function Contact() {
             backend logic, send me a message
           </p>
         </div>
-        <div className="mt-8 flex items-center gap-2 rounded-full border bg-background/85 px-4 py-2.5 text-xs font-medium text-muted-foreground shadow-xl backdrop-blur-md w-fit">
-          <span className="size-2 rounded-full bg-primary shadow-[0_0_12px_--alpha(var(--primary)/80%)]" />
+        <div className="bg-background/85 text-muted-foreground mt-8 flex w-fit items-center gap-2 rounded-full border px-4 py-2.5 text-xs font-medium shadow-xl backdrop-blur-md">
+          <span className="bg-primary size-2 rounded-full shadow-[0_0_12px_--alpha(var(--primary)/80%)]" />
           <span className="whitespace-nowrap">
             Available for selected projects
           </span>

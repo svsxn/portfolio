@@ -6,12 +6,12 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="h-80 bg-card mt-32 border-t">
-      <div className="flex h-full items-end justify-between px-6 py-8 mx-auto md:max-w-6xl">
+    <footer className="bg-card mt-32 h-80 border-t">
+      <div className="mx-auto flex h-full items-end justify-between px-6 py-8 md:max-w-6xl">
         <Link
           href="#hero"
           aria-label="Go to hero section"
-          className="transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="focus-visible:ring-ring focus-visible:ring-offset-background transition-opacity hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
         >
           <Image src="/logo.svg" alt="Logo" width={84} height={46} priority />
         </Link>
@@ -23,12 +23,12 @@ export default function Footer() {
               </LinkIconButton>
             ))}
           </div>
-          <div className="flex flex-col sm:flex-row items-end gap-4 sm:gap-8">
+          <div className="flex flex-col items-end gap-4 sm:flex-row sm:gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                className="text-muted-foreground hover:text-foreground text-sm transition-colors"
               >
                 {item.label}
               </Link>

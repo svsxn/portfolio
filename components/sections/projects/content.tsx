@@ -18,13 +18,13 @@ export default function Content() {
         </FadeInItem>
         <FadeInItem
           as="h2"
-          className="mt-6 text-balance text-4xl font-bold tracking-[-0.045em] sm:text-5xl lg:text-6xl"
+          className="mt-6 text-4xl font-bold tracking-[-0.045em] text-balance sm:text-5xl lg:text-6xl"
         >
           Selected Projects
         </FadeInItem>
         <FadeInItem
           as="p"
-          className="mt-5 max-w-xl text-base leading-7 text-muted-foreground sm:leading-8"
+          className="text-muted-foreground mt-5 max-w-xl text-base leading-7 sm:leading-8"
         >
           A focused selection of web applications built with Next.js, Supabase,
           TypeScript, and scalable product architecture.

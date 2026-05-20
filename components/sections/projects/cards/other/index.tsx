@@ -14,30 +14,30 @@ export default function Project({ project }: Props) {
   return (
     <FadeInItem
       as="article"
-      className="group relative overflow-hidden rounded-2xl border bg-card/45 p-5 shadow-xl transition-colors hover:border-primary/35 hover:bg-card/65 sm:p-6"
+      className="group bg-card/45 hover:border-primary/35 hover:bg-card/65 relative overflow-hidden rounded-2xl border p-5 shadow-xl transition-colors sm:p-6"
     >
       <Background />
-      <div className="relative aspect-16/10 overflow-hidden bg-background/60 rounded-xl">
+      <div className="bg-background/60 relative aspect-16/10 overflow-hidden rounded-xl">
         <Image
           src={"/preview.png"}
           alt={`${project.title} preview`}
           fill
           sizes="(min-width: 1024px) 360px, 100vw"
           unoptimized
-          className="object-cover brightness-80 transition duration-500 group-hover:scale-[1.025] group-hover:brightness-100 "
+          className="object-cover brightness-80 transition duration-500 group-hover:scale-[1.025] group-hover:brightness-100"
         />
       </div>
       <h3 className="mt-6 text-lg font-bold tracking-[-0.035em]">
         {project.title}
       </h3>
-      <p className="mt-4 min-h-18 text-sm leading-6 text-muted-foreground">
+      <p className="text-muted-foreground mt-4 min-h-18 text-sm leading-6">
         {project.description}
       </p>
       <div className="mt-5 flex flex-wrap gap-2">
         {project.stack.map((item) => (
           <span
             key={item}
-            className="rounded-full border bg-background/50 px-3 py-1 text-xs text-muted-foreground"
+            className="bg-background/50 text-muted-foreground rounded-full border px-3 py-1 text-xs"
           >
             {item}
           </span>
@@ -59,7 +59,7 @@ export default function Project({ project }: Props) {
             size="icon"
             variant="outline"
             className={cn(
-              "size-10 rounded-xl bg-background/40",
+              "bg-background/40 size-10 rounded-xl",
               !project.liveUrl && "w-auto px-4",
             )}
           >

@@ -7,23 +7,23 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="flex flex-col gap-4 scroll-mt-24 mx-auto w-full max-w-6xl px-6"
+      className="mx-auto flex w-full max-w-6xl scroll-mt-24 flex-col gap-4 px-6"
     >
       <FadeUp>
         <Label primaryText="Skills & Stack" />
       </FadeUp>
-      <div className="flex flex-col md:flex-row justify-between gap-4">
+      <div className="flex flex-col justify-between gap-4 md:flex-row">
         <FadeUp className="flex flex-col gap-4">
-          <h2 className="text-4xl font-semibold tracking-tight max-w-sm">
+          <h2 className="max-w-sm text-4xl font-semibold tracking-tight">
             Building fast products with modern web technologies
           </h2>
-          <p className="max-w-88 text-muted-foreground leading-relaxed">
+          <p className="text-muted-foreground max-w-88 leading-relaxed">
             I focus on scalable frontend architecture, server-first
             applications, realtime systems, and mainstainable backend
             infrastructure.
           </p>
         </FadeUp>
-        <Stagger className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <Stagger className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3">
           <Card title="Frontend" />
           <Card title="Backend" />
           <Card title="Database" />
