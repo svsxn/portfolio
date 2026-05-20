@@ -11,7 +11,7 @@ export default function Stack({ stack, classname }: Props) {
       {stack.map((item) => (
         <li
           key={item}
-          className="rounded-full border bg-background/70 px-3 py-1 text-xs font-medium text-muted-foreground"
+          className="bg-background/70 text-muted-foreground rounded-full border px-3 py-1 text-xs font-medium"
         >
           {item}
         </li>

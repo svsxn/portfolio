@@ -8,12 +8,12 @@ type Props = {
 export default function Highlights({ highlights, classname }: Props) {
   return (
     <div className={classname}>
-      <h4 className="text-sm font-semibold text-primary">Highlights</h4>
+      <h4 className="text-primary text-sm font-semibold">Highlights</h4>
       <ul className="mt-2 space-y-1">
         {highlights.map((highlight) => (
           <li
             key={highlight}
-            className="flex gap-2 text-sm leading-6 text-muted-foreground"
+            className="text-muted-foreground flex gap-2 text-sm leading-6"
           >
             <CheckIcon className="mt-1.25" color="var(--primary)" size={18} />
             <span>{highlight}</span>

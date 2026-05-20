@@ -9,7 +9,7 @@ export default function Tech() {
         viewBox="0 0 16 16"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="shrink-0 border rounded-md p-0.5 size-7"
+        className="size-7 shrink-0 rounded-md border p-0.5"
       >
         {techStack[0].iconPaths}
       </svg>

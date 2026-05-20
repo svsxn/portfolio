@@ -2,15 +2,15 @@ import { techStack } from "./tech-items";
 
 export default function TechStack() {
   return (
-    <div className="md:min-w-3xl tracking-widest">
-      <p className="text-xs font-bold uppercase tracking-[0.24em] text-foreground/80">
+    <div className="tracking-widest md:min-w-3xl">
+      <p className="text-foreground/80 text-xs font-bold tracking-[0.24em] uppercase">
         Tech stack
       </p>
-      <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm text-muted-foreground sm:flex sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
+      <ul className="text-muted-foreground mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm sm:flex sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
         {techStack.map((item) => (
           <li
             key={item.name}
-            className="flex items-center gap-2 opacity-70 hover:opacity-100 hover:text-foreground transition-[opacity,colors] cursor-default"
+            className="hover:text-foreground flex cursor-default items-center gap-2 opacity-70 transition-[opacity,colors] hover:opacity-100"
           >
             <svg
               width="20"

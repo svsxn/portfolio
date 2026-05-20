@@ -13,7 +13,7 @@ export function LinkIconButton({
       asChild
       variant="ghost"
       size="icon"
-      className="size-9 rounded-xl text-muted-foreground hover:bg-primary/10 hover:text-foreground"
+      className="text-muted-foreground hover:bg-primary/10 hover:text-foreground size-9 rounded-xl"
     >
       <Link href={href} target="_blank" rel="noreferrer">
         {children}
