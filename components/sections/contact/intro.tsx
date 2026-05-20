@@ -5,7 +5,7 @@ export default function Intro() {
     <div>
       <Label primaryText="Contact" />
       <h2 className="max-w-xs text-4xl font-bold tracking-[-0.045em] sm:max-w-md sm:text-5xl lg:max-w-lg lg:text-6xl">
-        Let&apos;s build something clean.
+        Let&apos;s build something <span className="text-primary">clean.</span>
       </h2>
       <div className="text-muted-foreground mt-6 max-w-116 space-y-5">
         <p>

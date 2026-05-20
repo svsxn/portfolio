@@ -9,3 +9,12 @@ type Project = {
   liveUrl?: string;
   githubUrl?: string;
 };
+
+type Link = {
+  label: string;
+  value: string;
+  href: string;
+  icon: ForwardRefExoticComponent<
+    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+  >;
+};
