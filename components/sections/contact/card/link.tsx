@@ -1,4 +1,5 @@
-import { ExternalLinkIcon, LucideIcon, MailIcon } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
+import { ExternalLinkIcon, LucideIcon } from "lucide-react";
 import Link from "next/link";
 
 type Props = {
@@ -14,18 +15,25 @@ export default function ContactLink({ label, value, href, icon: Icon }: Props) {
       href={href}
       target={href.startsWith("http") ? "_blank" : undefined}
       rel={href.startsWith("http") ? "noreferrer" : undefined}
-      className="flex items-center justify-between"
+      className="group space-y-5"
     >
-      <div className="flex items-center gap-4">
-        <div className="bg-primary/10 text-primary rounded-md p-2">
-          <Icon className="size-5" aria-hidden="true" />
+      <div className="flex items-center justify-between px-2">
+        <div className="flex items-center gap-4">
+          <div className="bg-primary/10 text-primary rounded-md p-2">
+            <Icon className="size-5" aria-hidden="true" />
+          </div>
+          <div className="flex flex-col gap-1 text-sm">
+            <span className="text-muted-foreground">{label}</span>
+            <span>{value}</span>
+          </div>
         </div>
-        <div className="flex flex-col gap-1 text-sm">
-          <span className="text-muted-foreground">{label}</span>
-          <span>{value}</span>
-        </div>
+        <ExternalLinkIcon
+          color="color-mix(in oklab, var(--muted-foreground) 40%, transparent)"
+          size={20}
+          className="hidden group-hover:block"
+        />
       </div>
-      <ExternalLinkIcon color="var(--primary)" size={20} />
+      <Separator />
     </Link>
   );
 }
